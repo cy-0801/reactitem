@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { HomeWrapper } from "./styled"
-import { index_header, home_iconList, goods_list1 } from "@api/home"
+import { index_header, home_iconList } from "@api/home"
 import { mapStateToProps, mapDispatchToProps } from "./connect";
 import { connect } from "react-redux";
 
@@ -129,18 +129,14 @@ class Home extends Component {
             </HomeWrapper>
         )
     }
-    async componentDidMount() {
-        let data0 = await home_iconList();
-        this.setState({
+    async componentDidMount() {  
+        let data0 = await home_iconList();  
+        this.setState({   
             iconList: data0[0].entries.slice(0,10)
-        });
-        
-        let data = await goods_list1();
-        console.log(data,111);   
-    }
-    
+        })
+    }    
 }
 
 
-// export default connect(mapStateToProps,mapDispatchToProps)(Home);
-export default Home;
+export default connect(mapStateToProps,mapDispatchToProps)(Home);
+

@@ -14,7 +14,4 @@ export const goods_list = ()=>http("GET","/restapi/shopping/v3/restaurants?latit
 
 })
 
-// /restapi/shopping/v1/find/recommendation?latitude=40.064445&longitude=116.349815&offset=0&limit=6&user_id=9958570
-export const goods_list1 = ()=>http("GET","/restapi/shopping/v1/find/recommendation?latitude=40.064445&longitude=116.349815&offset=0&limit=6&user_id=9958570",{
 
-})

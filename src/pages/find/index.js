@@ -14,16 +14,16 @@ export default class Find extends Component {
                         </div>
                     </a>
                     <div className="header_right">
-                        <p className="p_top">
+                        <div className="p_top">
                             <p>推荐有礼</p>
                             <p>20元现金拿不停</p>
                             <img src="https://fuss10.elemecdn.com/5/72/7232274c3c1934861abb86ba32b7bjpeg.jpeg?imageMogr/format/webp/" alt=""/>
-                        </p>
-                        <p className="p_bottom">
+                        </div>
+                        <div className="p_bottom">
                             <p>周边优惠</p>
                             <p>领取口碑好劵</p>
                             <img src="https://fuss10.elemecdn.com/5/10/2351e989d4171479ba0d7b5c06053jpeg.jpeg?imageMogr/format/webp/" alt=""/>
-                        </p>
+                        </div>
                     </div>
                 </div>     
                 <div className="contain">
