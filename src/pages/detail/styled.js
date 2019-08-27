@@ -62,12 +62,12 @@ export const DetailWrapper = styled.div`
         }
         span:nth-child(2){
             margin-right:.2rem;
-            font-size:.1rem;
+            font-size:.2rem;
             color:#594519;
             vertical-align:middle;
         }
         span:nth-child(3){
-            font-size:.1rem;
+            font-size:.2rem;
             color:#594519;
             vertical-align:middle;
         }
@@ -102,7 +102,13 @@ export const DetailWrapper = styled.div`
         margin-top:.8rem;
         color:#ccc;
     }
-
+    .aaa{
+        margin-top:.3rem;
+        width:100%;font-size:.35rem;
+        display:flex;padding-bottom:.2rem;
+        justify-content:space-around;
+        border-bottom:1px solid #ccc;
+    }
 
 
 

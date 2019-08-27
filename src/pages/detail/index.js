@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {DetailWrapper} from "./styled"
-
+import Menu from "@components/menu"
+import Business from "@components/business"
 export default class Detail extends Component {
     render() {
         return (
@@ -35,6 +36,13 @@ export default class Detail extends Component {
                         公告:<span>尊敬的顾客您好！感谢您对呷哺外送的支持与厚爱！ 1、 特殊天气、用餐高峰请您提前预约下单 2、 呷哺锅底、调料不单独配送，每单限购15份！ 3、呷哺外送提供食材均为半成品，需要您自行加工后食用！ 4、使用锅具炉具，押金仅限现金支付，不支持线上支付 5.下单即赠送辅料1套。</span>
                     </p>
                 </div>
+                <div className="aaa"> 
+                    <span>点餐</span>
+                    <span>评价</span>
+                    <span>商家</span>
+                </div>
+               
+                <Business/>
             </DetailWrapper>
         )
     }
