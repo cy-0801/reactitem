@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {MenuWrapper} from "./styled"
+import {NavLink} from "react-router-dom"
 
 export default class Menu extends Component {
     render() {
@@ -29,7 +30,71 @@ export default class Menu extends Component {
                         </li>
                     </ul>
                 </div>
-                
+                <div className="contain_1">
+                    <div className="aside">
+                        <ul>
+                            <li><NavLink to="">a</NavLink></li>
+                            <li><NavLink to="">a</NavLink></li>
+                            <li><NavLink to="">a</NavLink></li>
+                            <li><NavLink to="">a</NavLink></li>
+                            <li><NavLink to="">a</NavLink></li>
+                            <li><NavLink to="">a</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className="contain_1_right" >
+                        <ul>
+                            <li>
+                                <img src="https://cube.elemecdn.com/d/ba/4c4d2eb4283d071e548e7ec0b2da7jpeg.jpeg?x-oss-process=image/resize,m_lfit,w_140,h_140/watermark,g_se,x_4,y_4,image_YS8xYS82OGRlYzVjYTE0YjU1ZjJlZmFhYmIxMjM4Y2ZkZXBuZy5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yOA%3D%3D/quality,q_90/format,webp" alt=""/>
+                                <div>
+                                    <p>日月潭珍珠奶茶</p>
+                                    <p>香蕴浓情、玉满杯心?
+                                    主要原料：黑糖珍珠</p>
+                                    <p>
+                                        <span>月售999份</span>
+                                        <span>好评率99%</span>
+                                    </p>
+                                    <p>
+                                        <span>￥19</span>
+                                        <span>+</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://cube.elemecdn.com/d/ba/4c4d2eb4283d071e548e7ec0b2da7jpeg.jpeg?x-oss-process=image/resize,m_lfit,w_140,h_140/watermark,g_se,x_4,y_4,image_YS8xYS82OGRlYzVjYTE0YjU1ZjJlZmFhYmIxMjM4Y2ZkZXBuZy5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yOA%3D%3D/quality,q_90/format,webp" alt=""/>
+                                <div>
+                                    <p>日月潭珍珠奶茶</p>
+                                    <p>香蕴浓情、玉满杯心?
+                                    主要原料：黑糖珍珠</p>
+                                    <p>
+                                        <span>月售999份</span>
+                                        <span>好评率99%</span>
+                                    </p>
+                                    <p>
+                                        <span>￥19</span>
+                                        <span>+</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://cube.elemecdn.com/d/ba/4c4d2eb4283d071e548e7ec0b2da7jpeg.jpeg?x-oss-process=image/resize,m_lfit,w_140,h_140/watermark,g_se,x_4,y_4,image_YS8xYS82OGRlYzVjYTE0YjU1ZjJlZmFhYmIxMjM4Y2ZkZXBuZy5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yOA%3D%3D/quality,q_90/format,webp" alt=""/>
+                                <div>
+                                    <p>日月潭珍珠奶茶</p>
+                                    <p>香蕴浓情、玉满杯心?
+                                    主要原料：黑糖珍珠</p>
+                                    <p>
+                                        <span>月售999份</span>
+                                        <span>好评率99%</span>
+                                    </p>
+                                    <p>
+                                        <span>￥19</span>
+                                        <span>+</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                </div>
             </MenuWrapper>
         )
     }

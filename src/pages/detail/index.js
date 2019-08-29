@@ -2,11 +2,14 @@ import React, { Component } from 'react'
 import {DetailWrapper} from "./styled"
 import Menu from "@components/menu"
 import Business from "@components/business"
+import Assess from "@components/assess"
+import {Link,Switch,Route,Redirect,NavLink} from "react-router-dom"
 export default class Detail extends Component {
     render() {
         return (
             <DetailWrapper>
-                <i className="back">返回</i>
+            
+                <Link to="/home"><i className="back">返回</i></Link>
                 <header></header>
                 <img className="icon" src="https://cube.elemecdn.com/7/0c/294500b999bdf73731356a8d1db26jpeg.jpeg?x-oss-process=image/format,webp/resize,w_150" alt=""/>    
                 <div className="title">
@@ -37,12 +40,17 @@ export default class Detail extends Component {
                     </p>
                 </div>
                 <div className="aaa"> 
-                    <span>点餐</span>
-                    <span>评价</span>
-                    <span>商家</span>
+                    <NavLink to="/detail/menu"><span>点餐</span></NavLink>
+                    <NavLink to="/detail/assess"><span>评价</span></NavLink>
+                    <NavLink to="/detail/business"><span>商家</span></NavLink>
                 </div>
-               
-                <Business/>
+                <Redirect from="/detail" to="/detail/menu"></Redirect>
+               <Switch>
+                    <Route path="/detail/assess" component={Assess}></Route>
+                    <Route path="/detail/business" component={Business}></Route>
+                    <Route path="/detail/menu" component={Menu}></Route>
+               </Switch>
+              
             </DetailWrapper>
         )
     }

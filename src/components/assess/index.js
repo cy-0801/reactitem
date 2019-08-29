@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import {menuWrapper} from "./styled"
+import {MenuWrapper} from "./styled"
 
 export default class componentName extends Component {
     render() {
         return (
-            <menuWrapper>
+            <MenuWrapper>
                 评价
-            </menuWrapper>
+            </MenuWrapper>
         )
     }
 }

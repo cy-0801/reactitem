@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const DetailWrapper = styled.div`
     position:relative;
+    .active{color:red;border-bottom:1px solid red}
     .back{
         position:absolute;
         top:.1rem;left:.2rem;
