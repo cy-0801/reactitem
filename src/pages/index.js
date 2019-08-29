@@ -25,11 +25,18 @@ const Detail = Loadable({
     loader:()=>import("./detail"),
     loading:Loading
 })
+const Search = Loadable({
+    loader:()=>import("./search"),
+    loading:Loading
+})
+
+
 export {
     Home,
     Find,
     Login,
     Order,
     Mine,
-    Detail
+    Detail,
+    Search
 }

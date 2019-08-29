@@ -8,3 +8,12 @@ export const home_iconListAsyncAction = ()=>{
         dispatch(home_iconListAction(data))
     }
 }
+
+
+
+// export const searchAction = createAction("",()=>{})
+// export const searchAsyncAction = ()=>{
+//     return async (dispatch)=>{
+//         let data = await 接口不能用
+//     }
+// }

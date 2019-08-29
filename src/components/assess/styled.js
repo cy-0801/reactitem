@@ -1,5 +1,5 @@
 import styled from "styled-components"
 
-export const menuWrapper = styled.div`
+export const MenuWrapper = styled.div`
     
 `

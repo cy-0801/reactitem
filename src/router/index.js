@@ -1,4 +1,7 @@
-import { Home, Find, Order, Mine, Login, Detail } from "@pages"
+import { Home, Find, Order, Mine, Login, Detail ,Search } from "@pages"
+import Menu from "@components/menu"
+import Assess from "@components/assess"
+import Business from "@components/business"
 
 export const tabBarRoute = [
     {
@@ -49,12 +52,35 @@ export const notabBarRoute = [
         name: "登录",
     },
     {
-        path: "/detail",
+        path: "/detail/:id",
         component: Detail,
         meta: {
             flag: false
         },
         name: "详情",
+        children:[
+            {
+                path: "/menu",
+                component: Menu,
+                name: "aaa",
+            },{
+                path: "/assess",
+                component: Assess,
+                name: "bbb",
+            },{
+                path: "/business",
+                component: Business,
+                name: "aaa",
+            }
+        ]
+    },
+    {
+        path: "/search",
+        component: Search,
+        meta: {
+            flag: false
+        },
+        name: "搜索",
     }
 ]
 

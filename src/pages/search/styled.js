@@ -1,0 +1,50 @@
+import styled from "styled-components"
+export const SearchWrapper = styled.div`
+    i{font-size:.3rem;}
+    .back{
+        font-size:.5rem;
+    }
+    .search{
+        width:100%;
+        height:1rem;
+        margin-top:.5rem;
+        line-height:1rem;
+        span:nth-child(1){
+            margin-left:.2rem;
+            display:inline-block;
+            width:80%;
+            height:100%;
+            background:#ccc;
+            input{
+                width:70%;height:100%;
+                background:#ccc;
+                vertical-align:top;
+                margin-left:.2rem;
+                outline:none;border:none;
+                font-size:.3rem;
+            }
+        }
+        span:nth-child(2){
+            float:right;
+            font-size:.4rem;
+            margin-right:.3rem;
+            background:#ccc;
+        }
+    }
+    .title000{
+        margin:.3rem .2rem;
+        font-size:.4rem;
+        font-weight:900;
+    }
+    ul{
+        display:flex;
+        flex-wrap:wrap;
+        padding:0 .3rem;
+        font-size:.3rem;
+        li{
+            background:#ccc;
+            margin-right:.3rem;
+            margin-top:.3rem;
+        }
+    }
+`
